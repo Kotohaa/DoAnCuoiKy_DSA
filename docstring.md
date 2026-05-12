@@ -1,7 +1,5 @@
 # Docstrings Summary
 
-This file contains a compilation of all docstrings from the scripts in the Assets/Scripts folder.
-
 ## BackGroundManager.cs
 
 ### Start()
