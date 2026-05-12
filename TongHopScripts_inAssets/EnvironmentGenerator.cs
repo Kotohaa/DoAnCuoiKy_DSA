@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class EnvironmentGenerator : MonoBehaviour
 {
     public SpriteShapeController _SpriteShapeController;
+    private CustomPerlin _customPerlin = new CustomPerlin();
 
     [Header("Terrain Settings")]
     [Range(3, 100)] public int _levelLength = 50;
@@ -33,7 +34,6 @@ public class EnvironmentGenerator : MonoBehaviour
         ApplyDataToSpline();
     }
 
-
     /// <summary>
     /// Sinh dữ liệu địa hình mới dựa trên Perlin Noise và các tham số đã thiết lập.
     /// Tạo ra một danh sách các điểm Vector3 đại diện cho bề mặt địa hình rồi thêm 2 điểm chốt ở đáy để đóng kín Polygon.
@@ -49,7 +49,7 @@ public class EnvironmentGenerator : MonoBehaviour
             float x = i * _xMultiplier;
             // Perlin Noise dựa trên vị trí i và offset để có thể nối đoạn
             float noiseX = (i + _xOffset) * _NoiseStep;
-            float y = Mathf.PerlinNoise(noiseX, 0) * _yMultiplier;
+            float y = _customPerlin.Perlin01(noiseX) * _yMultiplier;
 
             _terrainPoints.Add(new Vector3(x, y, 0));
         }
