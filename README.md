@@ -1,11 +1,7 @@
 # DoAnCuoiKy_DSA_LeNhutTri_25521904
 Test game: https://kotohaa.github.io/TestGame/
 
-## Tổng hợp Docstring của các hàm ##
-
 # Docstrings Summary
-
-This file contains a compilation of all docstrings from the scripts in the Assets/Scripts folder.
 
 ## BackGroundManager.cs
 
