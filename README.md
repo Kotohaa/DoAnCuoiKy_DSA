@@ -1,5 +1,5 @@
 # DoAnCuoiKy_DSA_LeNhutTri_25521904
-Test game: https://kotohaa.github.io/TestGame/
+Test game: https://kotohaa.github.io/TestGame/  (chơi ở chế độ full màn hình để hiển thị đầy đủ)
 
 # Docstrings Summary
 
